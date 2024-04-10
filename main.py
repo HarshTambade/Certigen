@@ -24,7 +24,7 @@ def generate(names, x, y):
     for name in names:
         img = Image.open(filepath) # loading the selected certificate template
         draw = ImageDraw.Draw(img)
-        draw.text((x, y), name, font=ImageFont.truetype('fonts/Poppins-Medium.ttf', 80), fill="black") # setting the co-ordinates to draw the names     
+        draw.text((x, y), name, font=ImageFont.truetype('fonts/Poppins-Medium.ttf', 60), fill="black") # setting the co-ordinates to draw the names     
         img.save(r'generated_certificates/' + name + ".png") # saving the images to the generated_certificates directory   
             
 class App(ctk.CTk): ####### ↓↓↓ Main Window or Root ↓↓↓ #######
